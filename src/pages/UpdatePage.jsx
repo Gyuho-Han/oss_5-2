@@ -23,7 +23,7 @@ export default function UpdatePage() {
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v || "").trim());
   const isNumeric = (v) => /^\d+$/.test(String(v || "").trim());
   const isValidName = (v) =>
-    /^[A-Za-z가-힣\s.\-]+$/.test(String(v || "").trim());
+    /^[A-Za-z가-힣\s.-]+$/.test(String(v || "").trim());
 
   const validate = (next) => {
     const e = {};

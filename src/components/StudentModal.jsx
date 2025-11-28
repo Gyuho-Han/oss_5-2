@@ -60,7 +60,7 @@ export default function StudentModal({
     const s = String(v || "").trim();
     if (!s) return false;
     // Allow Korean/English alphabets and spaces/dots/hyphens
-    return /^[A-Za-z가-힣\s.\-]+$/.test(s);
+    return /^[A-Za-z가-힣\s.-]+$/.test(s);
   };
 
   const validateAndSubmit = () => {
